@@ -1,0 +1,11 @@
+.sapMInputBaseReadonly .sapMInputBaseReadonlyInner .sapMInputBaseInner {
+	background: transparent !important;
+	border: none !important;
+}
+
+.sapMInputBaseReadonly .sapMInputBaseReadonlyInner {
+	background: transparent !important;
+}
+.autoWidth >.sapMSegBBtn {
+	width: auto !important;
+}

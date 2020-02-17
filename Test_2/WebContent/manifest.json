@@ -1,0 +1,118 @@
+{
+	"_version": "1.7.0",
+	"start_url": "index.html",
+	"sap.app": {
+		"id": "demo_app",
+		"type": "application",
+		"applicationVersion": {
+			"version": "0.0.1"
+		},
+		"title": "{{title}}",
+		"subTitle": "{{subtitle}}",
+		"description": "{{description}}",
+		"tags": {
+			"keywords": [
+				"{{keyWord1}}",
+				"{{keyWord2}}"
+			]
+		},
+		"dataSources": {
+
+		}
+	},
+	"sap.ui": {
+		"bindingSyntax": "complex",
+		"technology": "UI5",
+		"icons": {
+			"icon": "sap-icon://add-contact",
+			"favIcon": "",
+			"phone": "icon/launchicon/57_iPhone_Desktop_Launch.png",
+			"phone@2": "icon/launchicon/114_iPhone-Retina_Web_Clip.png",
+			"tablet": "icon/launchicon/72_iPad_Desktop_Launch.png",
+			"tablet@2": "icon/launchicon/144_iPad_Retina_Web_Clip.png"
+		},
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": false
+		}
+	},
+	"sap.ui5": {
+		"resourceRoots": {
+			"demo_app": "./"
+		},
+		"resources": {
+			"css": [
+				{
+					"uri": "css/style.css"
+				}
+			]
+		},
+
+		"dependencies": {
+			"minUI5Version": "1.52.0",
+			"libs": {
+				"sap.m": {
+					
+				},
+				"sap.ui.layout": {
+					
+				},
+				"sap.ui.comp": {
+					
+				}
+			}
+		},
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"uri": "i18n/i18n.properties"
+			}
+		},
+		"rootView": {
+			"viewName": "demo_app.view.App",
+			"type": "XML",
+			"async": true,
+			"id": "idApp"
+		},
+		"routing": {
+			"config": {
+				"routerClass": "sap.m.routing.Router",
+				"viewType": "XML",
+				"viewPath": "demo_app.view",
+				"controlId": "idApp",
+				"controlAggregation":"pages",
+				"async": true,
+				"bypassed": {
+					"target": [
+						"notFound"
+					]
+				},
+				"height": "100%",
+				"displayBlock": "true"
+			},
+			"routes": [
+				{
+					"name": "main",
+					"pattern": "",
+					"target": "main"
+				}
+			],
+			"targets": {
+				"main": {
+					"viewName": "Main",
+					"viewId": "Main",
+					"viewLevel":0
+				},
+				"notFound": {
+					"viewName": "NotFound",
+					"viewLevel": 0
+				}
+			}
+		},
+		"config": {
+			"title": "",
+			"icon": "sap-icon://task"
+		}
+	}
+}

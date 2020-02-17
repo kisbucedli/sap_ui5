@@ -1,0 +1,22 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core"
+	xmlns="sap.m" xmlns:s="sap.ui.comp.smarttable" xmlns:sf="sap.ui.comp.smartfilterbar"
+	xmlns:f="sap.f" controllerName="demo_app.controller.Main"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<f:DynamicPage fitContent="false">
+	<f:title>
+			<f:DynamicPageTitle>
+				<f:heading>
+					<Label text="{i18n>main.title}" />
+				</f:heading>
+			</f:DynamicPageTitle>
+		</f:title>
+		<f:header>
+			<f:DynamicPageHeader>
+
+			</f:DynamicPageHeader>
+		</f:header>
+		<f:content>
+			<Button text="Button" />
+		</f:content>
+	</f:DynamicPage>
+</mvc:View>
